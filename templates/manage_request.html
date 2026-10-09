@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="管理您的 Mac 模型推荐历史需求。">
+    <title>管理我的需求 · Mac 模型指南</title>
+    <link rel="stylesheet" href="/_astro/Base.BNiCf3Po.css">
+    <style>
+        .manage-container {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .history-list {
+            margin-top: 20px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .history-item {
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .history-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #495057;
+        }
+        .history-desc {
+            font-size: 15px;
+            color: #212529;
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            border-left: 4px solid #007aff;
+            margin: 0;
+        }
+        .badge {
+            background: #007aff;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .btn-clear {
+            background: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-clear:hover {
+            background: #bd2130;
+        }
+        .empty-history {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#content">跳到主要内容</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">Mac 模型指南</a>
+            <nav aria-label="主要导航">
+                <a href="/start/">选模型</a>
+                <a href="/example/">结果范例</a>
+                <a href="/playground/">本地模型对话</a>
+                <a href="/manage-request/">管理我的需求</a>
+            </nav>
+        </div>
+    </header>
+    <main id="content" class="container">
+        <h1 class="page-title">管理我的需求</h1>
+        <p class="lede">在这里您可以查看在本地运行该系统期间产生的全部匹配和筛选历史记录。所有数据均存储在您的本地电脑中，绝不上传。</p>
+        
+        <div class="manage-container">
+            <h2>历史筛选记录</h2>
+            <div id="historyContainer">
+                <p style="color: #6c757d;">正在加载本地历史记录...</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        async function loadHistory() {
+            try {
+                const response = await fetch('/api/manage-history');
+                const data = await response.json();
+                const container = document.getElementById('historyContainer');
+                
+                if (data.ok && data.history && data.history.length > 0) {
+                    let html = '<ul class="history-list">';
+                    data.history.forEach(item => {
+                        html += `
+                            <li class="history-item">
+                                <div class="history-meta">
+                                    <span>芯片: <span class="badge">${item.chip || '未指定'}</span></span>
+                                    <span>内存: <span class="badge">${item.memory || '0'} GB</span></span>
+                                    <span>用途: ${item.categories ? item.categories.map(c => `<span class="badge" style="background:#28a745;">${c}</span>`).join(' ') : '无'}</span>
+                                </div>
+                                <p class="history-desc">${item.description || '无任务描述'}</p>
+                            </li>
+                        `;
+                    });
+                    html += '</ul>';
+                    html += `
+                        <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+                            <button class="btn-clear" onclick="clearHistory()">清除全部历史记录</button>
+                        </div>
+                    `;
+                    container.innerHTML = html;
+                } else {
+                    container.innerHTML = `
+                        <div class="empty-history">
+                            <h3>暂无本地筛选历史记录</h3>
+                            <p>您在“选模型”页面进行筛选后，历史请求将会安全保存在本地并在此处显示。</p>
+                        </div>
+                    `;
+                }
+            } catch (e) {
+                document.getElementById('historyContainer').innerHTML = '<p style="color: #dc3545;">加载历史记录失败，请刷新重试。</p>';
+            }
+        }
+
+        async function clearHistory() {
+            if (!confirm('您确定要清除所有的本地历史记录吗？此操作无法撤销。')) {
+                return;
+            }
+            try {
+                const response = await fetch('/api/clear-history', { method: 'POST' });
+                const data = await response.json();
+                if (data.ok) {
+                    loadHistory();
+                } else {
+                    alert('清除历史失败，请重试。');
+                }
+            } catch (e) {
+                alert('清除历史出现错误。');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', loadHistory);
+    </script>
+</body>
+</html>

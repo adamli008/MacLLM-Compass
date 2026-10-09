@@ -1,0 +1,3470 @@
+[
+  {
+    "id": "qwen3.6-400b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 400B Instruct（GGUF Q4_K_M，端侧大内存终极旗舰）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "通义千问 2026 年最新发布的超大尺度端侧大内存终极旗舰。具有惊人的 4000 亿密集参数，在多语言逻辑、巨型科学计算推理、全自动高度智能代理（Agent）控制中展现出降维打击级的恐怖实力。完美压榨您的 Mac 512GB 统一内存带宽！",
+    "tradeoffs": "模型权重高达 230.0 GB。推荐搭配 512GB 极品统一内存硬件，配合高算力多通道内存架构以发挥至臻秒级生成表现。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-400B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 384,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-400B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 230.0 GB + 2 GB 运行开销估算。推荐配备 512GB 终极统一内存的 Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "llama-4-400b-it-gguf-q4-0",
+    "displayName": "Llama 4 400B Instruct（GGUF Q4_0，官方量化，超级旗舰）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Meta 2026 年划时代的 4000 亿超大尺度密集参数模型。这是全球顶尖开源研究的顶峰体现，完美吃满您的 Mac 512GB 统一内存硬件极限，具有极其深不可测的自然语言及工程分析推理实力。",
+    "tradeoffs": "模型权重高达 235.0 GB。需要 512GB 内存以保障运行，建议使用最高规格内存带宽的 M3/M4 Ultra 芯片以取得最佳本地运行帧率。",
+    "quantization": {
+      "value": "GGUF Q4_0（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-400B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 384,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-400B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 235.0 GB + 2 GB 运行基础开销估算。完全发挥 Mac M3/M4 Ultra 512GB Unified Memory 硬件最高极限性能。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3.6-110b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 110B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "通义千问 2026 年最新推出的顶级旗舰大模型，包含 1100 亿激活参数。该模型在中文常识、复杂指令遵循以及智能代理（Agent）工作流中具有绝无仅有的统治力，是目前本地区推能力的最强代表。",
+    "tradeoffs": "模型权重高达 68.5 GB。建议使用配备最高规格内存带宽的 M3/M4 Ultra 芯片与 192GB 统一内存以保障流畅运行。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-110B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 144,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-110B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 68.5 GB + 2 GB 运行开销估算。需要 144GB 或更高内存的 Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3.6-72b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 72B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 3.6 系列 720 亿密集参数的黄金主力，在编程生成、数学推理及智能体（Agentic）调用方面达到全球超一线水准，极大利用 M3/M4 Max 的大统一内存吞吐量。",
+    "tradeoffs": "建议配备 96GB 或以上统一内存以获得极佳的推理体验。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-72B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 96,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-72B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 44.2 GB + 2 GB 运行开销估算。推荐配备 96GB 或以上内存的 Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3.6-32b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 32B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 3.6 旗舰中尺寸模型，包含 325 亿密集参数。具有无与伦比的极速推理性能、超长脉络长度和原生 Function Calling 智能代理接口，极其契合高频开发和本地助理情境。",
+    "tradeoffs": "模型权重约为 20.2 GB。需要配备 48GB 或以上的统一内存即可全速运行。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 48,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 20.2 GB + 2 GB 运行开销估算。推荐配备 48GB 或以上内存的 Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3.6-14b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 14B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 3.6 14B 密集参数指令微调模型，在极低本地运行消耗下依然提供了业内顶级的代码书写与逻辑遵循表现。配备 24GB 内存即可极速流畅运行。",
+    "tradeoffs": "针对 24GB 及以上统一内存进行了极致的 Apple Metal 加速适配。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 9.5 GB + 2 GB 运行开销估算。推荐配备 24GB 或以上内存 of Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3.6-7b-instruct-gguf-q4km",
+    "displayName": "Qwen 3.6 7B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "最新 Qwen 3.6 轻量级核心指令模型。具有惊人的秒级生成速度、原生的多轮多语境操控性能。极其适合 16GB 以上基础款 Mac 设备在日常助理、总结、对话中全天候静音加载运行。",
+    "tradeoffs": "推荐配备 16GB 或以上内存的 Mac 硬件以获得极致高吞吐速度。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3.6-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 4.8 GB + 2 GB 运行开销估算。推荐配备 16GB 或以上内存的 Mac 硬件。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "llama-4-130b-it-gguf-q4-0",
+    "displayName": "Llama 4 130B（GGUF Q4_0，极速多卡/大内存量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Meta 的 2026 顶级旗舰开源模型，包含 1300亿规模参数。此模型能完美释放您的 Mac 192GB 统一内存硬件极限，在复杂推理、科学计算以及极其宏大的多步骤工作流中具有绝无仅有的统治力。",
+    "tradeoffs": "模型权重高达 76.5 GB。需要 192GB 内存以保障运行，建议使用配备最高规格内存带宽的 M3/M4 Ultra 芯片以取得流畅帧率。",
+    "quantization": {
+      "value": "GGUF Q4_0（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-130B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 192,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-130B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 76.5 GB + 2 GB 运行基础开销估算。完全发挥 Mac M3/M4 Ultra 192GB Unified Memory 硬件极限性能。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-82b-it-gguf-q4-0",
+    "displayName": "Gemma 4 82B（GGUF Q4_0，官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "谷歌 2026 年最新发布的超大尺寸开源旗舰，具有 820亿激活参数，针对 Metal 和统一内存吞吐量进行了专门的算子核融合优化，多语言理解与智能代理执行（Agent）能力极强。",
+    "tradeoffs": "内存带宽吞吐要求极高，建议使用 128GB 内存以保障本地 30+ token/s 的生成速度。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-82B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 128,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-82B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 52.8 GB + 2 GB 运行基础开销估算。建议搭载在 128GB 或更高配置的 Mac 硬件上运行。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "llama-4-70b-it-gguf-q4-0",
+    "displayName": "Llama 4 70B（GGUF Q4_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原厂模型卡说明 Llama 4 70B 为 705亿密集参数模型，脉络长度 256K token，采 Llama 4 社区许可；这是针对 M3/M4 Max 等大统一内存硬件优化的高性能模型，在编程推理和多步骤代理决策（Agent）中具备业界天花板级表现。",
+    "tradeoffs": "Q4_0 量化相比全精度有轻微损失，纯文本推理极快，由于参数量大，需要 96GB 或以上的统一内存以获得极佳流畅体验。",
+    "quantization": {
+      "value": "GGUF Q4_0（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-70B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 96,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/meta-llama/Llama-4-70B-Instruct-GGUF",
+        "license": "Llama-4",
+        "retrieved_at": "2026-10-01",
+        "assumption": "以权重文件约 42.5 GB + 2 GB 运行基础开销估算。完全发挥 Mac 96GB/128GB Unified Memory 极致性能。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-e2b-it-gguf-q4-0",
+    "displayName": "Gemma 4 E2B（GGUF Q4_0，官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明 Gemma 4 E2B 為 23 億有效參數（含嵌入層共 51 億參數）的多模態模型，脈絡長度 128K token，採 Apache-2.0 授權；家族模型卡並列出「強化的程式與代理能力（Enhanced Coding & Agentic Capabilities）」與原生 function calling。",
+    "tradeoffs": "這是官方 QAT（量化感知訓練）Q4_0 版本，相較 BF16 全精度仍有量化損失，本站尚未實測品質差異。多模態視覺輸入需另外下載約 0.99 GB 的 mmproj 檔案，純文字對話可省略；授權雖標示 Apache-2.0，但 Google 另外附加了 Prohibited Use Policy（禁止使用政策），使用前應留意。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 3.35 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-4b-instruct-2507-gguf-q4km",
+    "displayName": "Qwen3-4B-Instruct-2507（GGUF Q4_K_M）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明本模型共 40 億參數（不含嵌入層 36 億），原生支援 262,144 token 脈絡長度，採 Apache-2.0 授權；定位為一般用途指令模型，卡片列出「指令遵循、邏輯推理、文字理解、數學、科學、程式與工具使用」等多項能力，程式能力只是其中一項，未特別定位為程式/代理專用模型。",
+    "tradeoffs": "Q4_K_M 屬於 4-bit 量化，相較官方 BF16 權重會有精度損失，本站尚未實測差異；此量化檔案由社群（unsloth）轉檔，非原廠發布。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "社群轉檔（unsloth），非原廠發布；檔案大小取自該轉檔頁。"
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 2.50 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-06b-gguf-q8-0",
+    "displayName": "Qwen3-0.6B（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠發布的 0.6B 指令模型，提供一般文字對話；官方 GGUF 倉庫有 Q8_0 權重。",
+    "tradeoffs": "小型模型的複雜推理與長文能力未經本站實測；容量門檻不是品質或速度保證。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/blob/main/Qwen3-0.6B-Q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/blob/main/Qwen3-0.6B-Q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 0.64 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-17b-gguf-q8-0",
+    "displayName": "Qwen3-1.7B（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠發布的 1.7B 指令模型，可在低記憶體 Mac 上提供本地文字對話；官方 GGUF 倉庫有 Q8_0 權重。",
+    "tradeoffs": "參數量較小，不能只憑可執行就推定複雜任務品質；本站未在 Mac 實測。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/blob/main/Qwen3-1.7B-Q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/blob/main/Qwen3-1.7B-Q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.83 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-4b-gguf-q4km",
+    "displayName": "Qwen3-4B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3 模型卡介紹思考與非思考模式、程式及工具使用；官方 GGUF 提供 4B Q4_K_M。此處代理標籤僅表示模型卡載有工具能力。",
+    "tradeoffs": "4-bit 量化可能降低相對原始權重的品質；本站未測程式及代理任務成功率。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/main/Qwen3-4B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/main/Qwen3-4B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.50 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "phi-4-mini-instruct-gguf-q3km",
+    "displayName": "Phi-4-mini-instruct（GGUF Q3_K_M）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Microsoft 發布的 Phi-4-mini-instruct 是小型文字指令模型，原廠模型卡標示程式用途；TensorBlock 提供 Q3_K_M GGUF。",
+    "tradeoffs": "GGUF 為社群轉檔；3-bit 量化品質損失可能比 4-bit 更明顯，Mac 上程式任務表現尚未由本站實測。",
+    "quantization": {
+      "value": "GGUF Q3_K_M",
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/tensorblock/Phi-4-mini-instruct-GGUF/blob/main/Phi-4-mini-instruct-Q3_K_M.gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-07",
+        "assumption": "TensorBlock 社群量化，非 Microsoft 原廠轉檔。"
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/tensorblock/Phi-4-mini-instruct-GGUF/blob/main/Phi-4-mini-instruct-Q3_K_M.gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.118 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-3b-reasoning-2512-gguf-q4km",
+    "displayName": "Ministral 3 3B Reasoning 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠模型卡將 Reasoning 版本定位於數學與程式推理，也載明原生 function calling；原廠 GGUF 提供 Q4_K_M。",
+    "tradeoffs": "本站未實測 4-bit 品質及長推理軌跡耗用；使用影像功能須另下載 mmproj，不包含在文字模式估算。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512-GGUF/blob/main/Ministral-3-3B-Reasoning-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512-GGUF/blob/main/Ministral-3-3B-Reasoning-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.15 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-2b-instruct-gguf-q4km",
+    "displayName": "Qwen3-VL-2B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠的 Qwen3-VL-2B-Instruct 是視覺語言指令模型，官方 GGUF 提供 Q4_K_M；本站先列為文字對話候選，影像能力需另備投影檔。",
+    "tradeoffs": "影像輸入需額外 mmproj；本級距估算已計入該檔，但實際影像解析度、脈絡與執行軟體仍會改變記憶體需求。本站未實測視覺或文字品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF/blob/main/Qwen3VL-2B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.11 GB + 視覺投影檔 0.45 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-4b-instruct-gguf-q4km",
+    "displayName": "Qwen3-VL-4B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠的 Qwen3-VL-4B-Instruct 是視覺語言指令模型，官方 GGUF 提供 Q4_K_M；本站先列為文字對話候選，影像能力需另備投影檔。",
+    "tradeoffs": "影像輸入需額外 mmproj；本級距估算已計入該檔，但實際影像解析度、脈絡與執行軟體仍會改變記憶體需求。本站未實測視覺或文字品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF/blob/main/Qwen3VL-4B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.50 GB + 視覺投影檔 0.45 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-3b-instruct-2512-gguf-q4km",
+    "displayName": "Ministral 3 3B Instruct 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠 Ministral-3-3B-Instruct-2512 是對話指令模型，官方提供 Q4_K_M GGUF，可在 Mac 本地進行文字互動。",
+    "tradeoffs": "Q4_K_M 量化品質與 Mac 實際速度尚未由本站實測；若使用影像能力需另備投影檔。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/blob/main/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.147 GB + 視覺投影檔 0.842 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-2b-thinking-gguf-q4km",
+    "displayName": "Qwen3-VL-2B-Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3-VL-2B-Thinking 是視覺語言推理指令模型；官方 GGUF 提供 Q4_K_M 權重，本站將其列為對話候選。",
+    "tradeoffs": "影像能力須搭配 mmproj；記憶體估算已計入 Q8_0 投影檔，但推理軌跡、影像解析度及長脈絡可能增加實際耗用。本站未實測品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking-GGUF/blob/main/Qwen3VL-2B-Thinking-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.107 GB + 視覺投影檔 0.445 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-4b-thinking-gguf-q4km",
+    "displayName": "Qwen3-VL-4B-Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3-VL-4B-Thinking 是視覺語言推理指令模型；官方 GGUF 提供 Q4_K_M 權重，本站將其列為對話候選。",
+    "tradeoffs": "影像能力須搭配 mmproj；記憶體估算已計入 Q8_0 投影檔，但推理軌跡、影像解析度及長脈絡可能增加實際耗用。本站未實測品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF/blob/main/Qwen3VL-4B-Thinking-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.497 GB + 視覺投影檔 0.454 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen25-05b-instruct-gguf-q4km",
+    "displayName": "Qwen2.5-0.5B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen2.5-0.5B-Instruct 是小型指令模型，官方 GGUF 提供 Q4_K_M，可供低記憶體 Mac 嘗試本地文字對話。",
+    "tradeoffs": "模型規模較小，本站未測複雜任務品質；4-bit 量化與長脈絡需求可能影響表現。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/blob/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/blob/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 0.491 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen25-15b-instruct-gguf-q4km",
+    "displayName": "Qwen2.5-1.5B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen2.5-1.5B-Instruct 是小型指令模型，官方 GGUF 提供 Q4_K_M，可供低記憶體 Mac 嘗試本地文字對話。",
+    "tradeoffs": "模型規模較小，本站未測複雜任務品質；4-bit 量化與長脈絡需求可能影響表現。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/blob/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/blob/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.117 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-42-3b-gguf-q4km",
+    "displayName": "IBM Granite 4.2 3B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.2-3b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/blob/main/granite-4.2-3b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/blob/main/granite-4.2-3b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.244 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-41-3b-gguf-q4km",
+    "displayName": "IBM Granite 4.1 3B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.1-3b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-3b-GGUF/blob/main/granite-4.1-3b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-3b-GGUF/blob/main/granite-4.1-3b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 2.100 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-33-2b-instruct-gguf-q4km",
+    "displayName": "IBM Granite 3.3 2B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-3.3-2b-instruct 是指令微調的對話模型，官方 GGUF 提供 Q4_K_M，可依 Mac 記憶體級距作本地候選。",
+    "tradeoffs": "模型屬較早版本；本站尚未比較其與新版本或原始精度權重的品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/blob/main/granite-3.3-2b-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/blob/main/granite-3.3-2b-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.545 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "smollm2-17b-instruct-gguf-q4km",
+    "displayName": "SmolLM2-1.7B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Hugging Face 發布的 SmolLM2-1.7B-Instruct 是小型指令模型，官方 GGUF 提供 Q4_K_M，適合列為低記憶體文字對話候選。",
+    "tradeoffs": "小型模型的複雜推理與長文品質未經本站實測；量化也可能降低精度。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/blob/main/smollm2-1.7b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/blob/main/smollm2-1.7b-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 1.056 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "smollm2-360m-instruct-gguf-q8-0",
+    "displayName": "SmolLM2-360M-Instruct（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Hugging Face 發布的 SmolLM2-360M-Instruct 是極小型指令模型，官方 GGUF 提供 Q8_0，用於簡單本地文字對話候選。",
+    "tradeoffs": "僅 360M 參數，複雜問答和長文能力不宜由可執行性推定；本站未測品質。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF/blob/main/smollm2-360m-instruct-q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF/blob/main/smollm2-360m-instruct-q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 0.386 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-micro-gguf-q4km",
+    "displayName": "Granite 4.0 Micro（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 Micro 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF/blob/main/granite-4.0-micro-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-micro-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 2.10 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-h-micro-gguf-q4km",
+    "displayName": "Granite 4.0 H Micro（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 H Micro 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-micro-GGUF/blob/main/granite-4.0-h-micro-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-micro-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 1.94 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-350m-gguf-q4km",
+    "displayName": "Granite 4.0 350M（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 350M 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-350m-GGUF/blob/main/granite-4.0-350m-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-350m-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.24 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-h-350m-gguf-q4km",
+    "displayName": "Granite 4.0 H 350M（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 H 350M 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-350m-GGUF/blob/main/granite-4.0-h-350m-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-350m-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.22 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-1b-gguf-q4km",
+    "displayName": "Granite 4.0 1B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 1B 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-1b-GGUF/blob/main/granite-4.0-1b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-1b-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 1.02 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-h-1b-gguf-q4km",
+    "displayName": "Granite 4.0 H 1B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 H 1B 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-1b-GGUF/blob/main/granite-4.0-h-1b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-1b-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.90 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmo-2-0425-1b-instruct-gguf-q4km",
+    "displayName": "OLMo 2 0425 1B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMo 2 0425 1B Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF/blob/main/OLMo-2-0425-1B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.94 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "smollm-135m-instruct-v02-gguf-q8-0",
+    "displayName": "SmolLM 135M Instruct v0.2（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 SmolLM 135M Instruct v0.2 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q8_0 檔案較大，下載與記憶體需求高；本站尚未實測品質。 極小模型適合低資源嘗試，複雜任務能力不應與大型模型等同。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-135M-instruct-v0.2-Q8_0-GGUF/blob/main/smollm-135m-instruct-add-basics-q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-135M-instruct-v0.2-Q8_0-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.14 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "smollm-360m-instruct-v02-gguf-q8-0",
+    "displayName": "SmolLM 360M Instruct v0.2（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 SmolLM 360M Instruct v0.2 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q8_0 檔案較大，下載與記憶體需求高；本站尚未實測品質。 極小模型適合低資源嘗試，複雜任務能力不應與大型模型等同。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-360M-instruct-v0.2-Q8_0-GGUF/blob/main/smollm-360m-instruct-add-basics-q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-360M-instruct-v0.2-Q8_0-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 0.39 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "smollm-17b-instruct-v02-gguf-q8-0",
+    "displayName": "SmolLM 1.7B Instruct v0.2（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 SmolLM 1.7B Instruct v0.2 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q8_0 檔案較大，下載與記憶體需求高；本站尚未實測品質。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-1.7B-instruct-v0.2-Q8_0-GGUF/blob/main/smollm-1.7b-instruct-add-basics-q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/HuggingFaceTB/smollm-1.7B-instruct-v0.2-Q8_0-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 1.82 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-3-1b-it-gguf-q4-0",
+    "displayName": "Gemma 3 1B IT（GGUF Q4_0，QAT 官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Gemma 3 1B IT 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。 Gemma 採 Google 自訂使用條款，非 Apache/MIT；使用或下載前請閱讀官方條款。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf/blob/main/gemma-3-1b-it-q4_0.gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 1.00 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-3-4b-it-gguf-q4-0",
+    "displayName": "Gemma 3 4B IT（GGUF Q4_0，QAT 官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Gemma 3 4B IT 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。 Gemma 採 Google 自訂使用條款，非 Apache/MIT；使用或下載前請閱讀官方條款。 圖片輸入另需約 0.85 GB 的 mmproj 視覺投影檔，本表記憶體估算僅涵蓋純文字；視覺用途需額外記憶體。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/blob/main/gemma-3-4b-it-q4_0.gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 3.16 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。視覺投影檔約 0.85 GB 未計入。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen2-05b-instruct-gguf-q4km",
+    "displayName": "Qwen2 0.5B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2 0.5B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.40 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen2-15b-instruct-gguf-q4km",
+    "displayName": "Qwen2 1.5B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2 1.5B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.99 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "phi-3-mini-4k-instruct-gguf-q4",
+    "displayName": "Phi-3 Mini 4K Instruct（GGUF Q4，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Phi-3 Mini 4K Instruct 的 Q4 GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4 量化相對全精度權重可能損失品質；本站尚未實測差異。 官方版本的名稱標示 4K 上下文，長文任務需另選模型。",
+    "quantization": {
+      "value": "GGUF Q4",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 2.39 GB + 2 GB（執行環境與約 4K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm25-350m-gguf-q4km",
+    "displayName": "LFM2.5 350M（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2.5 350M 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。 模型很小，複雜任務能力不應與較大模型等同。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.23 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm25-12b-instruct-gguf-q4km",
+    "displayName": "LFM2.5 1.2B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2.5 1.2B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.73 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm25-12b-thinking-gguf-q4km",
+    "displayName": "LFM2.5 1.2B Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2.5 1.2B Thinking 的 Q4_K_M GGUF，屬推理取向模型；列為本機對話候選，本站尚未實測推理品質。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.73 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm25-26b-gguf-q4km",
+    "displayName": "LFM2.5 2.6B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2.5 2.6B 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 1.67 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-700m-gguf-q4km",
+    "displayName": "LFM2 700M（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 700M 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。 小模型適合低資源嘗試，複雜任務能力不應與大型模型等同。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-700M-GGUF/blob/main/LFM2-700M-Q4_K_M.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-700M-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.47 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-12b-gguf-q4km",
+    "displayName": "LFM2 1.2B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 1.2B 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-1.2B-GGUF/blob/main/LFM2-1.2B-Q4_K_M.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-1.2B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.73 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-12b-rag-gguf-q4km",
+    "displayName": "LFM2 1.2B RAG（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 1.2B RAG 檢索增強生成取向模型的官方 Q4_K_M GGUF；列為本機文件問答候選，本站尚未實測品質。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-1.2B-RAG-GGUF/blob/main/LFM2-1.2B-RAG-Q4_K_M.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-1.2B-RAG-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 0.73 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-26b-gguf-q4km",
+    "displayName": "LFM2 2.6B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 2.6B 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/blob/main/LFM2-2.6B-Q4_K_M.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 8,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 1.56 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-e4b-it-gguf-q4-0",
+    "displayName": "Gemma 4 E4B（GGUF Q4_0，官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明 Gemma 4 E4B 為 45 億有效參數（含嵌入層共 80 億參數）的多模態模型，脈絡長度 128K token，採 Apache-2.0 授權；家族模型卡明確列出「強化的程式與代理能力」，並提供原生 function calling，官方並公布 LiveCodeBench v6 52.0%、Codeforces ELO 940 等程式相關成績。",
+    "tradeoffs": "官方 QAT Q4_0 版本相較 BF16 全精度有量化損失，本站尚未實測品質差異。視覺輸入需另下載約 0.99 GB mmproj 檔；授權為 Apache-2.0 但附加 Google 的 Prohibited Use Policy。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 5.15 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-8b-gguf-q4km",
+    "displayName": "Qwen3-8B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明本模型共 82 億參數（不含嵌入層 69.5 億），原生脈絡長度 32,768 token、以 YaRN 可延伸至 131,072 token，採 Apache-2.0 授權；定位為可在「思考模式」與「非思考模式」間切換的通用指令模型，官方模型卡提及其在數學、程式生成、多語與代理應用上的能力，未特別定位為程式專用模型。",
+    "tradeoffs": "Q4_K_M 為 4-bit 量化，相較官方 BF16 權重有精度損失，本站尚未實測差異；若開啟 YaRN 延伸脈絡到 131,072 token，需要比本估算更多的記憶體。此量化檔案由 Qwen 官方發布。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 5.03 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-12b-it-gguf-q4-0",
+    "displayName": "Gemma 4 12B（Unified，GGUF Q4_0 官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明 Gemma 4 12B 共 11.95B 參數，脈絡長度 256K token，採 Apache-2.0 授權；家族模型卡明確列出「強化的程式與代理能力」與原生 function calling。",
+    "tradeoffs": "官方 QAT Q4_0 版本相較 BF16 全精度有量化損失，本站尚未實測品質差異。多模態輸入需另下載約 0.18 GB mmproj 檔；授權為 Apache-2.0 但附加 Google 的 Prohibited Use Policy。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 6.98 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-14b-gguf-q4km",
+    "displayName": "Qwen3-14B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3 14B 模型卡介紹思考與非思考模式、程式及工具使用；官方 GGUF 提供 Q4_K_M 權重。",
+    "tradeoffs": "16GB 估算接近本站 70% 可用記憶體界線；較長脈絡及其他應用同時運行可能需 24GB。本站未測代理任務表現。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/blob/main/Qwen3-14B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/blob/main/Qwen3-14B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 9.00 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-8b-instruct-gguf-q4km",
+    "displayName": "Qwen3-VL-8B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠的 Qwen3-VL-8B-Instruct 是視覺語言指令模型，官方 GGUF 提供 Q4_K_M；本站先列為文字對話候選，影像能力需另備投影檔。",
+    "tradeoffs": "影像輸入需額外 mmproj；本級距估算已計入該檔，但實際影像解析度、脈絡與執行軟體仍會改變記憶體需求。本站未實測視覺或文字品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF/blob/main/Qwen3VL-8B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.03 GB + 視覺投影檔 0.75 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-8b-instruct-2512-gguf-q4km",
+    "displayName": "Ministral 3 8B Instruct 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠 Ministral-3-8B-Instruct-2512 是對話指令模型，官方提供 Q4_K_M GGUF，可在 Mac 本地進行文字互動。",
+    "tradeoffs": "Q4_K_M 量化品質與 Mac 實際速度尚未由本站實測；若使用影像能力需另備投影檔。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF/blob/main/Ministral-3-8B-Instruct-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.199 GB + 視覺投影檔 0.858 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-8b-reasoning-2512-gguf-q4km",
+    "displayName": "Ministral 3 8B Reasoning 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠 Ministral-3-8B-Reasoning-2512 為具推理能力的指令模型，模型卡說明程式用途與原生 function calling；官方提供 GGUF Q4_K_M。",
+    "tradeoffs": "較長推理軌跡會提高延遲與記憶體需求；本站尚未實測 4-bit 品質或代理任務成果。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/main/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.199 GB + 視覺投影檔 0.858 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-14b-instruct-2512-gguf-q4km",
+    "displayName": "Ministral 3 14B Instruct 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠 Ministral-3-14B-Instruct-2512 是對話指令模型，官方提供 Q4_K_M GGUF，可在 Mac 本地進行文字互動。",
+    "tradeoffs": "Q4_K_M 量化品質與 Mac 實際速度尚未由本站實測；若使用影像能力需另備投影檔。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/blob/main/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 8.240 GB + 視覺投影檔 0.879 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "ministral-3-14b-reasoning-2512-gguf-q4km",
+    "displayName": "Ministral 3 14B Reasoning 2512（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 原廠 Ministral-3-14B-Reasoning-2512 為具推理能力的指令模型，模型卡說明程式用途與原生 function calling；官方提供 GGUF Q4_K_M。",
+    "tradeoffs": "較長推理軌跡會提高延遲與記憶體需求；本站尚未實測 4-bit 品質或代理任務成果。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/main/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 8.240 GB + 視覺投影檔 0.879 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-8b-thinking-gguf-q4km",
+    "displayName": "Qwen3-VL-8B-Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3-VL-8B-Thinking 是視覺語言推理指令模型；官方 GGUF 提供 Q4_K_M 權重，本站將其列為對話候選。",
+    "tradeoffs": "影像能力須搭配 mmproj；記憶體估算已計入 Q8_0 投影檔，但推理軌跡、影像解析度及長脈絡可能增加實際耗用。本站未實測品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking-GGUF/blob/main/Qwen3VL-8B-Thinking-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.028 GB + 視覺投影檔 0.752 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-42-8b-gguf-q4km",
+    "displayName": "IBM Granite 4.2 8B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.2-8b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/blob/main/granite-4.2-8b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/blob/main/granite-4.2-8b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.348 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-41-8b-gguf-q4km",
+    "displayName": "IBM Granite 4.1 8B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.1-8b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-8b-GGUF/blob/main/granite-4.1-8b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-8b-GGUF/blob/main/granite-4.1-8b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 5.348 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-33-8b-instruct-gguf-q4km",
+    "displayName": "IBM Granite 3.3 8B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-3.3-8b-instruct 是指令微調的對話模型，官方 GGUF 提供 Q4_K_M，可依 Mac 記憶體級距作本地候選。",
+    "tradeoffs": "模型屬較早版本；本站尚未比較其與新版本或原始精度權重的品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct-GGUF/blob/main/granite-3.3-8b-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct-GGUF/blob/main/granite-3.3-8b-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 4.943 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "phi-4-gguf-q4-0",
+    "displayName": "Microsoft Phi-4（GGUF Q4_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Microsoft 發布的 Phi-4 是指令模型，官方 GGUF 提供 Q4_0，供 16GB 級距 Mac 嘗試本地對話。",
+    "tradeoffs": "Q4_0 是較舊的 4-bit 量化型式，可能損失品質；本站未實測與原始精度版本的差異。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/microsoft/phi-4-gguf/blob/main/phi-4-Q4_0.gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/microsoft/phi-4-gguf/blob/main/phi-4-Q4_0.gguf",
+        "license": "MIT",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 8.383 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-h-tiny-gguf-q4km",
+    "displayName": "Granite 4.0 H Tiny（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 H Tiny 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/blob/main/granite-4.0-h-tiny-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 4.23 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmoe-1b-7b-0924-instruct-gguf-q4km",
+    "displayName": "OLMoE 1B-7B 0924 Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMoE 1B-7B 0924 Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0924-Instruct-GGUF/blob/main/olmoe-1b-7b-0924-instruct-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0924-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 4.21 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmoe-1b-7b-0125-instruct-gguf-q4km",
+    "displayName": "OLMoE 1B-7B 0125 Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMoE 1B-7B 0125 Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct-GGUF/blob/main/OLMoE-1B-7B-0125-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 4.21 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmo-2-1124-7b-instruct-gguf-q4km",
+    "displayName": "OLMo 2 1124 7B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMo 2 1124 7B Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF/blob/main/olmo-2-1124-7B-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 4.47 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmo-2-1124-13b-instruct-gguf-q4km",
+    "displayName": "OLMo 2 1124 13B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMo 2 1124 13B Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct-GGUF/blob/main/olmo-2-1124-13B-instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 8.35 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-3-12b-it-gguf-q4-0",
+    "displayName": "Gemma 3 12B IT（GGUF Q4_0，QAT 官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Gemma 3 12B IT 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。 Gemma 採 Google 自訂使用條款，非 Apache/MIT；使用或下載前請閱讀官方條款。 圖片輸入另需約 0.85 GB 的 mmproj 視覺投影檔，本表記憶體估算僅涵蓋純文字；視覺用途需額外記憶體。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf/blob/main/gemma-3-12b-it-q4_0.gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 8.07 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。視覺投影檔約 0.85 GB 未計入。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen2-7b-instruct-gguf-q4km",
+    "displayName": "Qwen2 7B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2 7B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 4.68 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen25-7b-instruct-gguf-q4km",
+    "displayName": "Qwen2.5 7B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2.5 7B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 官方檔案分成 2 片，須下載同一組所有分片才能載入；本站以各片總大小估算，不可只下載首片。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（2 分片）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 2 片合計 4.68 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen25-14b-instruct-gguf-q4km",
+    "displayName": "Qwen2.5 14B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2.5 14B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 官方檔案分成 3 片，須下載同一組所有分片才能載入；本站以各片總大小估算，不可只下載首片。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（3 分片）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 3 片合計 8.99 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm25-8b-a1b-gguf-q4km",
+    "displayName": "LFM2.5 8B-A1B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2.5 8B-A1B 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 5.16 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen15-7b-chat-gguf-q4km",
+    "displayName": "Qwen1.5 7B Chat（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen1.5 7B Chat 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 Tongyi Qianwen 為自訂授權，非 Apache/MIT；商業產品或服務超過 1 億月活躍使用者（MAU）需向阿里雲取得明示授權，且不得以模型或其輸出改進其他大型語言模型；使用前應閱讀原文。 這是較早的 1.5 代版本，若硬體允許可一併比較新版。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF/blob/main/qwen1_5-7b-chat-q4_k_m.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-7B-Chat-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 4.77 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-8b-a1b-gguf-q4km",
+    "displayName": "LFM2 8B-A1B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 8B-A1B 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF/blob/main/LFM2-8B-A1B-Q4_K_M.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 16,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 5.04 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen15-14b-chat-gguf-q4km",
+    "displayName": "Qwen1.5 14B Chat（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen1.5 14B Chat 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 Tongyi Qianwen 為自訂授權，非 Apache/MIT；商業產品或服務超過 1 億月活躍使用者（MAU）需向阿里雲取得明示授權，且不得以模型或其輸出改進其他大型語言模型；使用前應閱讀原文。 這是較早的 1.5 代版本，若硬體允許可一併比較新版。 權重與估算餘裕幾乎貼齊 16 GB 的 70% 上限，本站保守建議 24 GB。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-14B-Chat-GGUF/blob/main/qwen1_5-14b-chat-q4_k_m.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-14B-Chat-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 9.19 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。 原公式下 16 GB 級距僅餘約 0.01 GB 容差，故保守提升到 24 GB。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gpt-oss-20b-mxfp4",
+    "displayName": "gpt-oss-20b（官方 MXFP4 原生量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "OpenAI 官方模型卡說明 gpt-oss-20b 為混合專家（MoE）模型，總參數 21B、每個 token 啟用 3.6B，原生脈絡長度 128K token，採 Apache-2.0 授權；模型卡明確列出「代理能力：原生支援 function calling、網頁瀏覽、Python 程式碼執行與結構化輸出」，定位為程式與代理任務使用。",
+    "tradeoffs": "官方權重本身即以 MXFP4（4-bit 等級）原生量化發布，並非另外轉檔，但相較理論上的更高精度仍可能有品質犧牲，本站尚未實測；MoE 架構下記憶體需求取決於「總參數」而非「啟用參數」，因此即使只啟用 3.6B 參數，仍需把 21B 總參數的權重全部載入。",
+    "quantization": {
+      "value": "MXFP4（原廠原生量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/openai/gpt-oss-20b",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/openai/gpt-oss-20b",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 13.76 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "magistral-small-2507-gguf-q4km",
+    "displayName": "Magistral Small 2507（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 官方發布 Magistral Small 2507 的 GGUF 量化檔；列為本機推理與對話候選，本站尚未實測推理品質。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2507-GGUF/blob/main/Magistral-Small-2507-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2507-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 14.33 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "magistral-small-2509-gguf-q4km",
+    "displayName": "Magistral Small 2509（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 官方發布 Magistral Small 2509 的 GGUF 量化檔；列為本機推理與對話候選，本站尚未實測推理品質。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2509-GGUF/blob/main/Magistral-Small-2509-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2509-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 14.33 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "lfm2-24b-a2b-gguf-q4km",
+    "displayName": "LFM2 24B-A2B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 LFM2 24B-A2B 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 LFM Open License v1.0 並非 Apache/MIT；依官方條款第 5 條，年營收有 1,000 萬美元門檻；超過 1,000 萬美元的法律實體，其商業用途不受此授權，接近門檻者應閱讀原文或另取授權。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 24,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 14.42 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen38-27b-gguf-q4km",
+    "displayName": "Qwen3.8-27B（GGUF Q4_K_M，Unsloth Dynamic）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明 Qwen3.8-27B 為 27B 參數的視覺語言模型，原生脈絡長度 262,144 token、可延伸至 1,000,000 token，採 Apache-2.0 授權；官方模型卡說明其具備「更強的自主規劃與環境回饋處理能力，能更可靠地完成端到端任務」，並支援一般性的程式與專業任務。",
+    "tradeoffs": "此為社群（unsloth Dynamic v3）量化版本，非原廠發布的 4-bit 版本，本站尚未實測與官方權重的品質差異；模型定位偏通用視覺語言助理，程式能力為附帶能力而非主打用途。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（Unsloth Dynamic v3）",
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "社群轉檔（unsloth），非原廠發布；檔案大小取自該轉檔頁。"
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 16.46 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-31b-it-gguf-q4-0",
+    "displayName": "Gemma 4 31B（GGUF Q4_0，官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明 Gemma 4 31B 為 30.7B 密集參數模型，脈絡長度 256K token，採 Apache-2.0 授權；家族模型卡明確列出「強化的程式與代理能力」，31B 模型卡並特別提及在「程式碼生成、補全與修正」上的強項。",
+    "tradeoffs": "官方 QAT Q4_0 版本相較 BF16 全精度有量化損失，本站尚未實測品質差異。視覺輸入需另下載約 1.20 GB mmproj 檔；授權為 Apache-2.0 但附加 Google 的 Prohibited Use Policy。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 17.65 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-30b-a3b-gguf-q4km",
+    "displayName": "Qwen3-30B-A3B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3 30B-A3B 為混合專家指令模型，家族模型卡介紹程式及工具使用，並提供官方 Q4_K_M GGUF。",
+    "tradeoffs": "雖然每次只啟用部分專家，仍須容納完整量化權重；長脈絡及多工會增加記憶體需求，本站未實測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/blob/main/Qwen3-30B-A3B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF/blob/main/Qwen3-30B-A3B-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 18.56 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-30b-a3b-instruct-gguf-q4km",
+    "displayName": "Qwen3-VL-30B-A3B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠的 Qwen3-VL-30B-A3B-Instruct 是視覺語言指令模型，官方 GGUF 提供 Q4_K_M；本站先列為文字對話候選，影像能力需另備投影檔。",
+    "tradeoffs": "影像輸入需額外 mmproj；本級距估算已計入該檔，但實際影像解析度、脈絡與執行軟體仍會改變記憶體需求。本站未實測視覺或文字品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct-GGUF/blob/main/Qwen3VL-30B-A3B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 18.56 GB + 視覺投影檔 0.71 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwq-32b-gguf-q4km",
+    "displayName": "QwQ-32B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠發布的 QwQ-32B 推理指令模型，官方 GGUF 提供 Q4_K_M 權重，供本地一般對話與推理用途。",
+    "tradeoffs": "推理過程可能較慢且產生較長輸出；32GB 級距接近估算界線，本站未實測長脈絡與量化品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/QwQ-32B-GGUF/blob/main/qwq-32b-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/QwQ-32B-GGUF/blob/main/qwq-32b-q4_k_m.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 19.85 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-30b-a3b-thinking-gguf-q4km",
+    "displayName": "Qwen3-VL-30B-A3B-Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3-VL-30B-A3B-Thinking 是視覺語言推理指令模型；官方 GGUF 提供 Q4_K_M 權重，本站將其列為對話候選。",
+    "tradeoffs": "影像能力須搭配 mmproj；記憶體估算已計入 Q8_0 投影檔，但推理軌跡、影像解析度及長脈絡可能增加實際耗用。本站未實測品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking-GGUF/blob/main/Qwen3VL-30B-A3B-Thinking-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 18.557 GB + 視覺投影檔 0.712 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-42-30b-gguf-q4km",
+    "displayName": "IBM Granite 4.2 30B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.2-30b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/blob/main/granite-4.2-30b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/blob/main/granite-4.2-30b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 17.721 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-41-30b-gguf-q4km",
+    "displayName": "IBM Granite 4.1 30B（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "IBM 原廠 granite-4.1-30b 為指令模型，模型卡列出程式與工具調用用途；官方 GGUF 提供 Q4_K_M。代理標籤不代表本站已測試代理任務。",
+    "tradeoffs": "Q4_K_M 權重與長脈絡的品質及記憶體消耗尚未由本站在 Mac 上實測；模型卡用途不等於具體場景評測。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-30b-GGUF/blob/main/granite-4.1-30b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-30b-GGUF/blob/main/granite-4.1-30b-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 17.490 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-4-26b-a4b-it-gguf-q4-0",
+    "displayName": "Gemma 4 26B-A4B（GGUF Q4_0，官方 QAT 量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Google 原廠 Gemma 4 26B-A4B 為混合專家指令模型，家族模型卡明列程式能力和原生 function calling；官方提供 QAT Q4_0 GGUF。",
+    "tradeoffs": "執行時仍須容納完整權重；影像使用需另載 mmproj，估算已計入。本站未實測品質；Apache-2.0 授權之外另有 Google Prohibited Use Policy。",
+    "quantization": {
+      "value": "GGUF Q4_0（QAT，官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf/blob/main/gemma-4-26B_q4_0-it.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 14.439 GB + 視覺投影檔 1.195 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "granite-40-h-small-gguf-q4km",
+    "displayName": "Granite 4.0 H Small（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Granite 4.0 H Small 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/blob/main/granite-4.0-h-small-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 19.48 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "olmo-2-0325-32b-instruct-gguf-q4-0",
+    "displayName": "OLMo 2 0325 32B Instruct（GGUF Q4_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 OLMo 2 0325 32B Instruct 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF/blob/main/OLMo-2-0325-32B-Instruct-Q4_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 18.27 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "gemma-3-27b-it-gguf-q4-0",
+    "displayName": "Gemma 3 27B IT（GGUF Q4_0，QAT 官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Gemma 3 27B IT 的 GGUF 量化檔；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "此量化版本相對全精度權重可能損失品質；本站尚未實測差異。 Gemma 採 Google 自訂使用條款，非 Apache/MIT；使用或下載前請閱讀官方條款。 圖片輸入另需約 0.86 GB 的 mmproj 視覺投影檔，本表記憶體估算僅涵蓋純文字；視覺用途需額外記憶體。",
+    "quantization": {
+      "value": "GGUF Q4_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf/blob/main/gemma-3-27b-it-q4_0.gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/google/gemma-3-27b-it-qat-q4_0-gguf",
+        "license": "Gemma Terms of Use",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 17.23 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。視覺投影檔約 0.86 GB 未計入。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen25-32b-instruct-gguf-q4km",
+    "displayName": "Qwen2.5 32B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2.5 32B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 官方檔案分成 5 片，須下載同一組所有分片才能載入；本站以各片總大小估算，不可只下載首片。",
+    "quantization": {
+      "value": "GGUF Q4_K_M（5 分片）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 5 片合計 19.85 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen15-32b-chat-gguf-q4km",
+    "displayName": "Qwen1.5 32B Chat（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen1.5 32B Chat 對話模型的官方 Q4_K_M GGUF；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。 Tongyi Qianwen 為自訂授權，非 Apache/MIT；商業產品或服務超過 1 億月活躍使用者（MAU）需向阿里雲取得明示授權，且不得以模型或其輸出改進其他大型語言模型；使用前應閱讀原文。 這是較早的 1.5 代版本，若硬體允許可一併比較新版。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/blob/main/qwen1_5-32b-chat-q4_k_m.gguf",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 32,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF",
+        "license": null,
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 19.70 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-32b-gguf-q6k",
+    "displayName": "Qwen3-32B（GGUF Q6_K，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠模型卡說明本模型共 32.8B 密集參數，原生脈絡長度 32,768 token、以 YaRN 可延伸至 131,072 token，採 Apache-2.0 授權；定位為通用指令模型，可在思考／非思考模式間切換。此處選用 Q6_K 而非 4-bit；相應地，檔案較大、記憶體門檻較高。",
+    "tradeoffs": "選用 Q6_K 而非 4-bit 量化，檔案較大、記憶體門檻較高；本站尚未實測與 BF16 原始權重或 4-bit 量化的品質差異。若開啟 YaRN 延伸脈絡，需要比本估算更多記憶體。",
+    "quantization": {
+      "value": "GGUF Q6_K（官方量化）",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 48,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-32B-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-09-30",
+        "assumption": "以權重檔 26.88 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-32b-instruct-gguf-q4km",
+    "displayName": "Qwen3-VL-32B-Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠的 Qwen3-VL-32B-Instruct 是視覺語言指令模型，官方 GGUF 提供 Q4_K_M；本站先列為文字對話候選，影像能力需另備投影檔。",
+    "tradeoffs": "影像輸入需額外 mmproj；本級距估算已計入該檔，但實際影像解析度、脈絡與執行軟體仍會改變記憶體需求。本站未實測視覺或文字品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct-GGUF/blob/main/Qwen3VL-32B-Instruct-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 48,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 19.76 GB + 視覺投影檔 0.77 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen3-vl-32b-thinking-gguf-q4km",
+    "displayName": "Qwen3-VL-32B-Thinking（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Qwen 原廠 Qwen3-VL-32B-Thinking 是視覺語言推理指令模型；官方 GGUF 提供 Q4_K_M 權重，本站將其列為對話候選。",
+    "tradeoffs": "影像能力須搭配 mmproj；記憶體估算已計入 Q8_0 投影檔，但推理軌跡、影像解析度及長脈絡可能增加實際耗用。本站未實測品質。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF/blob/main/Qwen3VL-32B-Thinking-Q4_K_M.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 48,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以權重檔 19.762 GB + 視覺投影檔 0.772 GB + 2 GB（執行環境與約 8K 上下文）估算，假設 macOS 預設約 70% 統一記憶體可給 GPU 使用；影像解析度或更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "magistral-small-2506-gguf-q8-0",
+    "displayName": "Magistral Small 2506（GGUF Q8_0，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "Mistral 官方發布 Magistral Small 2506 的 GGUF 量化檔；列為本機推理與對話候選，本站尚未實測推理品質。",
+    "tradeoffs": "Q8_0 檔案較大，下載與記憶體需求高；本站尚未實測品質。",
+    "quantization": {
+      "value": "GGUF Q8_0",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2506_gguf/blob/main/Magistral-Small-2506_Q8_0.gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 48,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/mistralai/Magistral-Small-2506_gguf",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-07",
+        "assumption": "以官方 GGUF 權重檔 25.05 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  },
+  {
+    "id": "qwen2-57b-a14b-instruct-gguf-q4km",
+    "displayName": "Qwen2 57B-A14B Instruct（GGUF Q4_K_M，官方量化）",
+    "tier": "candidate",
+    "sample": false,
+    "matchedCategories": [
+      "chat"
+    ],
+    "whyListed": "原廠發布 Qwen2 57B-A14B Instruct 的 Q4_K_M GGUF 指令／對話模型；列為本機對話候選，本站尚未實測表現。",
+    "tradeoffs": "Q4_K_M 量化相對全精度權重可能損失品質；本站尚未實測差異。",
+    "quantization": {
+      "value": "GGUF Q4_K_M",
+      "source": {
+        "kind": "official",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": null
+      }
+    },
+    "minMemoryGb": {
+      "value": 64,
+      "source": {
+        "kind": "estimate",
+        "attribution": null,
+        "url": "https://huggingface.co/Qwen/Qwen2-57B-A14B-Instruct-GGUF",
+        "license": "Apache-2.0",
+        "retrieved_at": "2026-10-08",
+        "assumption": "以官方 GGUF 權重檔 34.85 GB + 2 GB（執行環境與約 8K 上下文）估算，並假設 macOS 約 70% 統一記憶體可給 GPU 使用；更長上下文需要更多記憶體。"
+      }
+    },
+    "sources": []
+  }
+]

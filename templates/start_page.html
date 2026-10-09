@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="依您的工作与 Mac 硬件，缩小本地模型的选择。">
+    <title>开始选模型 · Mac 模型指南</title>
+    <link rel="stylesheet" href="/_astro/Base.BNiCf3Po.css">
+    <style>
+        .wizard-form {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .field label {
+            font-weight: bold;
+            color: #333;
+        }
+        .field select, .field textarea {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 15px;
+            width: 100%;
+            background: #fff;
+        }
+        .choices {
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .choices legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #333;
+        }
+        .choice-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .choice-item:hover {
+            background: #f1f3f5;
+        }
+        .choice-item input {
+            margin-top: 4px;
+        }
+        .choice-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .choice-label {
+            font-weight: bold;
+            color: #212529;
+        }
+        .choice-hint {
+            font-size: 13px;
+            color: #6c757d;
+        }
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+        .actions button {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: #007aff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .actions button:hover {
+            background: #0056b3;
+        }
+        .results-section {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .error-message {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#content">跳到主要内容</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">Mac 模型指南</a>
+            <nav aria-label="主要导航">
+                <a href="/start/">选模型</a>
+                <a href="/example/">结果范例</a>
+                <a href="/playground/">本地模型对话</a>
+            </nav>
+        </div>
+    </header>
+    <main id="content" class="container">
+        <h1 class="page-title">选您的 Mac 和用途，取得推荐候选模型。</h1>
+        <p class="hint">一页填完，最适合您 Mac 统一内存的本地大模型候选将直接显示在表单下方。</p>
+        
+        <form class="wizard-form" id="wizardForm" novalidate>
+            <p class="hint" style="margin-bottom: 20px;">
+                不确定配置时：点屏幕左上角的苹果菜单，选择“关于这台 Mac”，即可查看芯片与内存。
+            </p>
+            
+            <div class="form-row">
+                <div class="field">
+                    <label for="chip">芯片</label>
+                    <select id="chip" required>
+                        <option value="">请选择芯片</option>
+                        <option value="m1">M1</option>
+                        <option value="m1_pro">M1 Pro</option>
+                        <option value="m1_max">M1 Max</option>
+                        <option value="m1_ultra">M1 Ultra</option>
+                        <option value="m2">M2</option>
+                        <option value="m2_pro">M2 Pro</option>
+                        <option value="m2_max">M2 Max</option>
+                        <option value="m2_ultra">M2 Ultra</option>
+                        <option value="m3">M3</option>
+                        <option value="m3_pro">M3 Pro</option>
+                        <option value="m3_max">M3 Max</option>
+                        <option value="m3_ultra">M3 Ultra</option>
+                        <option value="m4">M4</option>
+                        <option value="m4_pro">M4 Pro</option>
+                        <option value="m4_max">M4 Max</option>
+                        <option value="m5">M5</option>
+                        <option value="m5_pro">M5 Pro</option>
+                        <option value="m5_max">M5 Max</option>
+                        <option value="m6">M6</option>
+                    </select>
+                    <div class="error-message" id="chip-error">请选择您的 Mac 芯片</div>
+                </div>
+                
+                <div class="field">
+                    <label for="memoryGb">内存</label>
+                    <select id="memoryGb" required>
+                        <option value="">请先选择芯片</option>
+                    </select>
+                    <div class="error-message" id="memory-error">请选择您的内存大小</div>
+                </div>
+            </div>
+
+            <fieldset class="choices">
+                <legend>用途（可复选，至少选择一个）</legend>
+                <div class="choice-item">
+                    <input type="checkbox" name="categories" value="chat" id="cat-chat" checked>
+                    <label for="cat-chat" class="choice-text">
+                        <span class="choice-label">聊天</span>
+                        <span class="choice-hint">问答、写作、翻译、整理文件</span>
+                    </label>
+                </div>
+                <div class="choice-item">
+                    <input type="checkbox" name="categories" value="coding" id="cat-coding">
+                    <label for="cat-coding" class="choice-text">
+                        <span class="choice-label">Coding</span>
+                        <span class="choice-hint">写程序、修 bug、让 AI 改专案</span>
+                    </label>
+                </div>
+                <div class="choice-item">
+                    <input type="checkbox" name="categories" value="agent" id="cat-agent">
+                    <label for="cat-agent" class="choice-text">
+                        <span class="choice-label">Agent</span>
+                        <span class="choice-hint">让 AI 自己呼叫工具、跑自动化流程</span>
+                    </label>
+                </div>
+                <div class="error-message" id="categories-error" style="margin-top:10px;">请至少选择一种用途</div>
+            </fieldset>
+
+            <div class="field">
+                <label for="description">具体描述（必填）</label>
+                <p class="hint" style="margin-bottom: 8px;">
+                    写下您实际想让它做的事。AI 推荐模型时，将考虑您的实际使用场景。
+                </p>
+                <textarea id="description" rows="4" placeholder="例如：日常进行中文长文对比分析，需要精准提取要点并提供引用来源..." required></textarea>
+                <div class="error-message" id="description-error">请填写您的具体任务描述</div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" id="submitBtn">查看候选模型</button>
+            </div>
+        </form>
+
+        <!-- results display section -->
+        <section class="main results-section" id="resultsSection" style="display: none;">
+            <h2 id="resultHeader">候选模型</h2>
+            <div class="results">
+                <p class="lede">先从这些候选模型开始。列表已自动根据您的 Mac 芯片与内存容量完成硬件兼容性过滤。</p>
+                <p class="muted-text">候选大模型列表已按照模型尺寸从大到小（Top 10）降序排列，以最大程度发挥您的 Mac 硬件统一内存效能。</p>
+                
+                <ol class="candidates" id="candidatesList">
+                    <!-- candidates will be loaded here dynamically -->
+                </ol>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const u = [8, 16, 18, 24, 32, 36, 48, 64, 96, 128, 192, 256, 512];
+        const d = [16, 24, 32]; // For M6
+        
+        const chipSelect = document.getElementById('chip');
+        const memorySelect = document.getElementById('memoryGb');
+        const wizardForm = document.getElementById('wizardForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const resultsSection = document.getElementById('resultsSection');
+        const candidatesList = document.getElementById('candidatesList');
+
+        // Populate memory dropdown based on selected chip
+        chipSelect.addEventListener('change', () => {
+            const chip = chipSelect.value;
+            memorySelect.innerHTML = '';
+            
+            if (!chip) {
+                const opt = document.createElement('option');
+                opt.value = '';
+                opt.textContent = '请先选择芯片';
+                memorySelect.appendChild(opt);
+                return;
+            }
+
+            const optDefault = document.createElement('option');
+            optDefault.value = '';
+            optDefault.textContent = '请选择内存大小';
+            memorySelect.appendChild(optDefault);
+
+            const memoryList = (chip === 'm6') ? d : u;
+            memoryList.forEach(gb => {
+                const opt = document.createElement('option');
+                opt.value = gb;
+                opt.textContent = `${gb} GB`;
+                memorySelect.appendChild(opt);
+            });
+        });
+
+        // Handle Form Submission
+        wizardForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Validation
+            let isValid = true;
+            
+            const chip = chipSelect.value;
+            const memoryGb = memorySelect.value;
+            const description = document.getElementById('description').value.trim();
+            
+            // Selected categories
+            const categories = [];
+            document.querySelectorAll('input[name="categories"]:checked').forEach(cb => {
+                categories.push(cb.value);
+            });
+
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(err => err.style.display = 'none');
+
+            if (!chip) {
+                document.getElementById('chip-error').style.display = 'block';
+                isValid = false;
+            }
+            if (!memoryGb) {
+                document.getElementById('memory-error').style.display = 'block';
+                isValid = false;
+            }
+            if (categories.length === 0) {
+                document.getElementById('categories-error').style.display = 'block';
+                isValid = false;
+            }
+            if (!description) {
+                document.getElementById('description-error').style.display = 'block';
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Submit Payload
+            submitBtn.disabled = true;
+            submitBtn.textContent = '筛选模型中...';
+            resultsSection.style.display = 'none';
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chip: chip,
+                        memoryGb: parseInt(memoryGb),
+                        categories: categories,
+                        description: description
+                    })
+                });
+                
+                const data = await response.json();
+                if (data.ok) {
+                    renderCandidates(data.candidates);
+                    resultsSection.style.display = 'block';
+                    resultsSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    alert('获取推荐失败: ' + (data.error || '未知错误'));
+                }
+            } catch (err) {
+                alert('网络连接失败，请确认本地服务正常运行。');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '查看候选模型';
+            }
+        });
+
+        const categoryLabels = {
+            "chat": "聊天",
+            "coding": "Coding",
+            "agent": "Agent"
+        };
+
+        const tierLabels = {
+            "candidate": "候选",
+            "evidence_backed": "有情境证据的推荐",
+            "round_priority": "此轮优先推荐"
+        };
+
+        // Render Candidates in clean Astro format
+        function renderCandidates(candidates) {
+            candidatesList.innerHTML = '';
+            
+            if (candidates.length === 0) {
+                candidatesList.innerHTML = '<li class="empty"><h3>未找到完全匹配的候选模型</h3><p>您的 Mac 内存容量可能过小，无法流畅在本地运行匹配对应用途的大模型。建议选择更大内存的硬件设备。</p></li>';
+                return;
+            }
+
+            candidates.forEach(c => {
+                const li = document.createElement('li');
+                li.className = 'candidate';
+
+                // Category badges
+                const catsText = c.matchedCategories.map(cat => categoryLabels[cat] || cat).join('、');
+
+                // Header details
+                const headDiv = document.createElement('div');
+                headDiv.className = 'candidate-head';
+                headDiv.innerHTML = `
+                    <h3>${c.displayName} · ${c.quantization.value}</h3>
+                    <span class="badge">${tierLabels[c.tier] || "候选"}</span>
+                `;
+                li.appendChild(headDiv);
+
+                // Matched Categories Paragraph
+                if (catsText) {
+                    const matchedP = document.createElement('p');
+                    matchedP.className = 'matched';
+                    matchedP.textContent = `符合：${catsText}`;
+                    li.appendChild(matchedP);
+                }
+
+                // Why Listed
+                const whyP = document.createElement('p');
+                whyP.innerHTML = `<strong>为什么列入：</strong>${c.whyListed}`;
+                li.appendChild(whyP);
+
+                // Details Toggle
+                const details = document.createElement('details');
+                
+                const summary = document.createElement('summary');
+                summary.textContent = '展开技术取捨与来源';
+                details.appendChild(summary);
+
+                const tradeoffsP = document.createElement('p');
+                tradeoffsP.innerHTML = `<strong>技术与取捨：</strong>${c.tradeoffs}`;
+                details.appendChild(tradeoffsP);
+
+                const quantP = document.createElement('p');
+                quantP.innerHTML = `量化：${c.quantization.value}`;
+                if (c.quantization.source && c.quantization.source.url) {
+                    quantP.innerHTML += ` <span class="source-note">（官方资料 · <a href="${c.quantization.source.url}" target="_blank" rel="noopener noreferrer">原始链接</a> · ${c.quantization.source.license || "开源协议"}）</span>`;
+                }
+                details.appendChild(quantP);
+
+                const memP = document.createElement('p');
+                memP.innerHTML = `最少内存：${c.minMemoryGb.value} GB`;
+                if (c.minMemoryGb.source) {
+                    const src = c.minMemoryGb.source;
+                    memP.innerHTML += ` <span class="source-note">（估算 · 取得于 ${src.retrieved_at} · 假设：${src.assumption || "根据参数量与量化比例估算"}）</span>`;
+                }
+                details.appendChild(memP);
+
+                li.appendChild(details);
+                candidatesList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

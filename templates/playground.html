@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>本地模型对话 · Mac 模型指南</title>
+    <link rel="stylesheet" href="/_astro/Base.BNiCf3Po.css">
+    <style>
+        .playground-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .playground-main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .playground-main {
+                grid-template-columns: 1fr;
+            }
+        }
+        .settings-panel {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .chat-panel {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            background: #ffffff;
+        }
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+        .message.user {
+            align-self: flex-end;
+            background: #007aff;
+            color: #ffffff;
+        }
+        .message.assistant {
+            align-self: flex-start;
+            background: #f1f3f5;
+            color: #333333;
+        }
+        .chat-input-area {
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            background: #f8f9fa;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .chat-input-area textarea {
+            flex: 1;
+            resize: none;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .chat-input-area button {
+            padding: 0 20px;
+            background: #007aff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .chat-input-area button:hover {
+            background: #0056b3;
+        }
+        .chat-input-area button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .status-badge.online {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-badge.offline {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#content">跳到主要内容</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">Mac 模型指南</a>
+            <nav aria-label="主要导航">
+                <a href="/start/">选模型</a>
+                <a href="/example/">结果范例</a>
+                <a href="/playground/">本地模型对话</a>
+            </nav>
+        </div>
+    </header>
+    <main id="content" class="container">
+        <h1 class="page-title">本地模型对话测试 Playground</h1>
+        <p class="hint">直接在网页端与您本地部署的 AI 模型进行对话测试。支持即时调参和测试。</p>
+        
+        <div class="playground-container">
+            <div class="playground-main">
+                <!-- settings sidebar -->
+                <div class="settings-panel">
+                    <h3>模型与连线设定</h3>
+                    <div class="field" style="margin-bottom: 15px;">
+                        <label for="apiUrl">API 端点 (OAI 格式)</label>
+                        <input type="text" id="apiUrl" value="http://192.168.1.5:8000/v1" style="width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;">
+                    </div>
+                    <div class="field" style="margin-bottom: 15px;">
+                        <label for="apiKey">API 金钥 (Authorization)</label>
+                        <input type="password" id="apiKey" value="123456" style="width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;">
+                    </div>
+                    <div class="field" style="margin-bottom: 15px;">
+                        <label for="modelName">模型名称</label>
+                        <input type="text" id="modelName" value="Qwen3-30B-A3B-MLX-8bit" style="width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;">
+                    </div>
+                    <div class="field" style="margin-bottom: 15px;">
+                        <label for="maxTokens">Max Tokens</label>
+                        <input type="number" id="maxTokens" value="512" style="width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px;">
+                    </div>
+                    
+                    <button type="button" id="testConnBtn" class="button secondary" style="width: 100%; margin-top: 10px;">测试连线</button>
+                    <div id="connStatus" class="status-badge offline">未检测</div>
+                </div>
+
+                <!-- chat area -->
+                <div class="chat-panel">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message assistant">
+                            您好！我是您的本地 AI 助手，请在下方输入您的问题。
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <textarea id="userInput" placeholder="输入消息... (Ctrl+Enter 发送)"></textarea>
+                        <button type="button" id="sendBtn">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const testConnBtn = document.getElementById('testConnBtn');
+        const connStatus = document.getElementById('connStatus');
+
+        let messageHistory = [
+            { role: 'system', content: 'You are a helpful assistant.' }
+        ];
+
+        function appendMessage(role, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${role}`;
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function testConnection() {
+            connStatus.textContent = '测试中...';
+            connStatus.className = 'status-badge offline';
+            
+            try {
+                const response = await fetch('/api/chat/test', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        api_url: document.getElementById('apiUrl').value,
+                        api_key: document.getElementById('apiKey').value,
+                        model: document.getElementById('modelName').value
+                    })
+                });
+                const data = await response.json();
+                if (data.ok) {
+                    connStatus.textContent = '连线正常';
+                    connStatus.className = 'status-badge online';
+                } else {
+                    connStatus.textContent = '连线失败: ' + (data.error || '状态错误');
+                    connStatus.className = 'status-badge offline';
+                }
+            } catch (err) {
+                connStatus.textContent = '连线失败';
+                connStatus.className = 'status-badge offline';
+            }
+        }
+
+        async function sendMessage() {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            userInput.value = '';
+            appendMessage('user', text);
+            messageHistory.push({ role: 'user', content: text });
+
+            // Disable UI
+            userInput.disabled = true;
+            sendBtn.disabled = true;
+
+            // Append a loading indicator
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message assistant';
+            loadingDiv.textContent = 'AI 思考中...';
+            chatMessages.appendChild(loadingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            try {
+                const response = await fetch('/api/chat/completions', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        api_url: document.getElementById('apiUrl').value,
+                        api_key: document.getElementById('apiKey').value,
+                        model: document.getElementById('modelName').value,
+                        messages: messageHistory,
+                        max_tokens: parseInt(document.getElementById('maxTokens').value) || 256
+                    })
+                });
+                const data = await response.json();
+                chatMessages.removeChild(loadingDiv);
+
+                if (data.ok) {
+                    const reply = data.choices[0].message.content;
+                    appendMessage('assistant', reply);
+                    messageHistory.push({ role: 'assistant', content: reply });
+                } else {
+                    appendMessage('assistant', 'Error: ' + (data.error || '连线错误'));
+                }
+            } catch (err) {
+                chatMessages.removeChild(loadingDiv);
+                appendMessage('assistant', '连线异常，请确认 API 端点是否能正确访问。');
+            } finally {
+                userInput.disabled = false;
+                sendBtn.disabled = false;
+                userInput.focus();
+            }
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+                sendMessage();
+            }
+        });
+        testConnBtn.addEventListener('click', testConnection);
+
+        // Run connection test on load
+        testConnection();
+    </script>
+</body>
+</html>

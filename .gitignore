@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+local_requests.txt
+local_feedbacks.txt
+local_feedbacks_test.txt
