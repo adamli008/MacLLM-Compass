@@ -51,16 +51,17 @@
    * `requests` (用于 Hugging Face 实时 API 请求)
 3. **极简依赖一键安装**：
    ```bash
-   pip3 install flask requests
+   pip3 install -r requirements.txt
    ```
 
 ---
 
 ## 🚀 启动与运行步骤
 
-1. **进入发布目录**：
+1. **克隆项目并进入目录**：
    ```bash
-   cd outputs/
+   git clone https://github.com/adamli008/MacLLM-Compass.git
+   cd MacLLM-Compass
    ```
 2. **运行服务程序**：
    可以使用提供的 shell 脚本一键拉起：
@@ -84,11 +85,12 @@
 ## 📁 目录结构树
 
 ```text
-outputs/
+.
 ├── app.py                  # 核心 Flask 后端控制引擎、智能排序算法与重定向映射器
 ├── run.sh                  # 运行服务的快捷一键启动脚本
 ├── models_db.json          # 95 款合规离线候选模型的高阶备份数据库
-├── local_requests.txt      # 安全存储在用户本地的筛选请求日志（用于需求管理）
+├── requirements.txt        # 项目依赖清单
+├── local_requests.txt      # 安全存储在用户本地的筛选请求日志（用于需求管理，运行后自动生成）
 ├── static/
 │   └── _astro/             # 主流前端 Astro CSS 渲染与 JS 组件压缩包
 └── templates/
